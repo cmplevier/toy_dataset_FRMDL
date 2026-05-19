@@ -47,3 +47,6 @@ envs/
 # Old notebooks. Keep only mnist1dsc-classification_run.ipynb tracked.
 /notebooks/mnist1d-classification.ipynb
 /notebooks/mnist1dsc-classification.ipynb
+
+# Local data creation script. Keep SC_data_creation_run.py tracked.
+/mnist1d/SC_data_creation.py
