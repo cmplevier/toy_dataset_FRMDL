@@ -18,14 +18,14 @@
 !/mnist1d/transform.py
 !/mnist1d/utils.py
 !/mnist1d/visualize.py
-!/mnist1d/SC_data_creation_run2.py
+!/mnist1d/SC_data_creation_run.py
 
 # Notebook files needed for the run2 workflow.
 /notebooks/*
 !/notebooks/models.py
 !/notebooks/train.py
 !/notebooks/mpl_style.txt
-!/notebooks/mnist1dsc-classification_run2.ipynb
+!/notebooks/mnist1dsc-classification_run.ipynb
 
 # Usual generated local files.
 __pycache__/
@@ -43,3 +43,6 @@ envs/
 /mnist1d_data_including_marker_reversed.pkl
 /mnist1d_data_x_length_50_with_marker.pkl
 /mnist1d_data_x_length_50_with_marker_reversed.pkl
+
+/mnist1d/SC_data_creation
+/notebooks/mnist1d1dsc-classification
