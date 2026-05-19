@@ -216,7 +216,6 @@ def plot_examples_with_group_marker(dataset, title, num_rows=2, num_cols=5):
     plt.tight_layout()
     plt.show()
 
-
 def check_marked_dataset(original_dataset, marked_dataset, reversed_marker=False):
     original_x = original_dataset["x"]
     original_x_test = original_dataset["x_test"]
