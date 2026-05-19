@@ -3,18 +3,6 @@
 This repository contains the MNIST-1D package, the base dataset, a script that creates
 marker-augmented datasets, and the notebook used to run the classification experiments.
 
-The tracked workflow uses:
-
-- `mnist1d_data.pkl`
-- `mnist1d/SC_data_creation_run.py`
-- `notebooks/mnist1dsc-classification_run.ipynb`
-- `requirements.txt`
-
-The marker generation script creates both marker datasets in one run:
-
-- `mnist1d_data_x_length_50_with_marker.pkl`
-- `mnist1d_data_x_length_50_with_marker_reversed.pkl`
-
 ## 1. Clone the repository
 
 The script and notebook currently use absolute paths for this project location:
@@ -139,3 +127,5 @@ If you are using VS Code, select this interpreter for the notebook:
 
 The notebook expects the base dataset and both generated marker datasets to be present in
 the repository root before running the experiment cells.
+
+The notebook then produces the original mnist1d results and on top of that looks at the results of using MNIST1d-SC data to prove the properties that are discussed in the blog post. 
