@@ -188,11 +188,11 @@ def plot_examples_with_group_marker(dataset, title, num_rows=2, num_cols=5):
     )
 
     for ax, x, y in zip(axes.ravel(), xs, ys):
-        # Original vertical MNIST-1D style.
-        # Signal value on x-axis, time/index on y-axis.
-        ax.plot(x, t, linewidth=2)
+        # Plot only the original MNIST-1D signal.
+        # Do not include the appended blank region or marker in the line plot.
+        ax.plot(x[:old_seq_len], t[:old_seq_len], linewidth=2)
 
-        # Highlight the marker point at the final appended position.
+        # Highlight the marker point separately.
         ax.scatter(
             x[marker_pos],
             t[marker_pos],
