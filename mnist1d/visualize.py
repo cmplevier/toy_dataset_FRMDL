@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def plot_mnist1d_examples(
-    url="/home/christian/FRMDL/mnist1d/mnist1d_data.pkl",
+    url="/home/christian/FRMDL_toy_dataset/mnist1d/mnist1d_data_including_marker_reversed.pkl",
     num_rows=2,
     num_cols=5,
 ):
@@ -44,4 +44,4 @@ def plot_mnist1d_examples(
     plt.show()
 
 
-plot_mnist1d_examples(url="/home/christian/FRMDL/mnist1d/mnist1d_data.pkl")
+plot_mnist1d_examples()

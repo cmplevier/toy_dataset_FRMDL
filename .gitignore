@@ -1,18 +1,45 @@
-# The MNIST-1D dataset | 2020
-# Sam Greydanus
+# Ignore everything by default so only the essentials below are tracked.
+/*
 
+# Root-level essentials.
+!/.gitignore
+!/readme.MD
+!/requirements.txt
+!/mnist1d_data.pkl
+!/mnist1d/
+!/notebooks/
+
+# Project-level essentials.
+# Package files.
+/mnist1d/*
+!/mnist1d/.gitignore
+!/mnist1d/__init__.py
+!/mnist1d/data.py
+!/mnist1d/transform.py
+!/mnist1d/utils.py
+!/mnist1d/visualize.py
+!/mnist1d/SC_data_creation_run2.py
+
+# Notebook files needed for the run2 workflow.
+/notebooks/*
+!/notebooks/models.py
+!/notebooks/train.py
+!/notebooks/mpl_style.txt
+!/notebooks/mnist1dsc-classification_run2.ipynb
+
+# Usual generated local files.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+.venv_*/
+envs/
 .DS_Store
-*.egg-info
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-.pytest_cache
-*.tar
-*.zip
-notebooks/*.pkl
-notebooks/mnist1d
-# *.pkl # allow pickle files
-__pycache__
-.vscode
 *~
 
-dist/*
+# Generated marker datasets. Keep mnist1d_data.pkl tracked.
+/mnist1d_data_including_marker.pkl
+/mnist1d_data_including_marker_reversed.pkl
+/mnist1d_data_x_length_50_with_marker.pkl
+/mnist1d_data_x_length_50_with_marker_reversed.pkl

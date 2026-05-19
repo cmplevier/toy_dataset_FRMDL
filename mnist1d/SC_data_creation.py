@@ -3,18 +3,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-IN_PKL = "/home/christian/FRMDL/mnist1d/mnist1d_data.pkl"
-#OUT_PKL = "/home/christian/FRMDL/mnist1d/mnist1d_data_including_marker.pkl"
-OUT_PKL = "/home/christian/FRMDL/mnist1d/mnist1d_data_including_marker_reversed.pkl"
+IN_PKL = "/home/christian/FRMDL_toy_dataset/mnist1d/mnist1d_data.pkl"
+#OUT_PKL = "/home/christian/FRMDL_toy_dataset/mnist1d/mnist1d_data_including_marker.pkl"
+OUT_PKL = "/home/christian/FRMDL_toy_dataset/mnist1d/mnist1d_data_including_marker_reversed.pkl"
 
 
 # Marker positions in the 1D sequence
 # MNIST-1D usually has length 40
-# MARKER_POS_0_TO_4 = 6
-# MARKER_POS_5_TO_9 = 25
+MARKER_POS_0_TO_4 = 6
+MARKER_POS_5_TO_9 = 25
 
-MARKER_POS_0_TO_4 = 25
-MARKER_POS_5_TO_9 = 6
+MARKER_POS_0_TO_4 = 25      # uncomment for reversed case
+MARKER_POS_5_TO_9 = 6       # uncomment for reversed case
 
 def add_group_marker(dataset):
     """
